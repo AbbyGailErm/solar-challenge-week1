@@ -37,4 +37,4 @@ if st.sidebar.button("Fetch Data"):
     plot_dni(data)
 
 # Footer
-st.sidebar.text("Developed by Arsema")
+st.sidebar.text("Developed by Abigail")
