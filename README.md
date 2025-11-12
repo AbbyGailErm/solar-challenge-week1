@@ -1,4 +1,5 @@
 Solar Data Discovery Challenge
+
 Project Overview
 This project focuses on conducting exploratory data analysis (EDA) on solar farm data from Benin, Sierra Leone, and Togo. The objective is to analyze these datasets to identify key trends and insights that will support MoonLight Energy Solutions in enhancing operational efficiency through solar investments.
 
