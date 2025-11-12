@@ -1,46 +1,46 @@
-Project Description:
-This repository contains the Solar Data Discovery Challenge, which analyzes solar farm data from Benin, Sierra Leone, and Togo to identify high-potential regions for solar energy deployment. The project includes data profiling, cleaning, exploratory data analysis (EDA), and cross-country comparison of key metrics such as solar irradiance, temperature, humidity, and wind. An optional interactive Streamlit dashboard allows dynamic visualization of trends and top-performing regions. Insights generated aim to support MoonLight Energy Solutions in making data-driven decisions for sustainable and efficient solar energy investments.
+Solar Data Discovery Challenge
+Project Overview
+This project focuses on conducting exploratory data analysis (EDA) on solar farm data from Benin, Sierra Leone, and Togo. The objective is to analyze these datasets to identify key trends and insights that will support MoonLight Energy Solutions in enhancing operational efficiency through solar investments.
 
 Methodology
+Data Profiling and Cleaning:
 
-The analysis follows a structured workflow to ensure reproducibility, accuracy, and actionable insights:
+Profiling the datasets to identify missing values and outliers.
+Implementing data cleaning techniques to ensure accuracy and consistency.
+Exploratory Data Analysis (EDA):
 
-Data Collection & Setup
+Generating summary statistics and visualizations to understand the data better.
+Analyzing relationships between key variables, including GHI, DNI, temperature, and humidity.
+Creating time series plots and wind rose diagrams to visualize temporal and directional data patterns.
+Comparative Analysis:
 
-Solar datasets for each country are loaded and stored in a structured directory.
+Combining datasets from all three countries to facilitate comparative analysis.
+Evaluating strengths and weaknesses of solar investment opportunities in each country.
+Results
+Key Insights: Benin shows the highest Global Horizontal Irradiance (GHI) and Direct Normal Irradiance (DNI), indicating the best potential for solar energy generation. Sierra Leone exhibits lower irradiance values with greater variability, suggesting a need for improved infrastructure. Togo presents moderate solar potential, making hybrid systems a viable option. Visualizations: Correlation matrices revealed strong relationships between GHI, DNI, and environmental factors. Time series analyses highlighted seasonal trends in solar irradiance, while wind rose diagrams illustrated prevailing wind patterns that could affect solar panel efficiency. Investment Recommendations: Based on the analysis, Benin is prioritized for solar investments, while Sierra Leone requires infrastructure enhancements. Togo's hybrid system implementation is suggested to ensure reliable energy supply.
 
-Python environment is configured with required libraries and CI/CD workflow is implemented for reproducibility.
+Installation
+To set up the project environment, follow these steps:
 
-Data Profiling & Cleaning
+Clone the repository:
 
-Examine datasets for missing values, outliers, and inconsistencies.
+git clone https://github.com/arsema-mz/solar-challenge-week1.git
+Create a virtual environment:
 
-Apply imputation strategies (median/fill) and outlier detection (Z-scores, IQR).
+python -m venv venv
+Activate the virtual environment:
 
-Standardize timestamps and sensor measurements for consistency.
+On Windows:
+venv\Scripts\activate
+On macOS/Linux:
+source venv/bin/activate
+Install dependencies:
 
-Exploratory Data Analysis (EDA)
+pip install -r requirements.txt
+Run the application:
 
-Visualize temporal patterns of GHI, DNI, DHI and temperature trends.
-
-Examine relationships between environmental factors (temperature, humidity, wind) and module readings (ModA, ModB).
-
-Assess impact of cleaning events on module performance.
-
-Cross-Country Comparison
-
-Compare solar potential metrics across Benin, Sierra Leone, and Togo using summary statistics, boxplots, and optional statistical tests (ANOVA/Kruskal-Wallis).
-
-Identify regions with highest and most reliable solar irradiance.
-
-Optional Interactive Dashboard
-
-Create a Streamlit dashboard to explore country-wise solar trends.
-
-Enable interactive selection of countries and visualization of top-performing regions.
-
-Insights & Recommendations
-
-Translate EDA findings into actionable insights for strategic solar farm deployment.
-
-Highlight regions and conditions optimal for long-term sustainable solar energy investments.
+python app.py
+Future Work
+Further refine analyses based on additional datasets or variables.
+Explore machine learning models to predict solar energy generation potential.
+Engage local communities to gather qualitative insights that could complement quantitative data.
